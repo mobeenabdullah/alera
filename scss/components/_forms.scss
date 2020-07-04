@@ -1,0 +1,118 @@
+// Buttons
+.button {
+  padding: 8px 16px;
+  color: $white;
+  font-size: 16px;
+  background-color: $black;
+  border: none;
+  border-radius: 0;
+
+  &.button-white {
+    color: $black;
+    background-color: $white;
+
+    &:visited {
+      color: $black;
+    }
+  }
+
+  &.button-bordered {
+    color: $black;
+    background-color: transparent;
+    border: 1px solid $black;
+
+    &:hover  {
+      color: $white;
+      background-color: $black;
+
+      &:visited {
+        color: $white;
+      }
+    }
+
+    &:visited {
+      color: $black;
+    }
+  }
+
+  &:visited {
+    color: $white;
+  }
+}
+
+// POSTS PAGINATIoN
+.posts-pagination {
+
+  .pagination-previous, .pagination-next {
+    display: inline-block;
+    padding: 10px 15px;
+    height: inherit;
+    color: $black;
+    background-color: $color-gray-100;
+    border-radius: 0;
+    border: none;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+
+      &:visited {
+        color: $white;
+      }
+    }
+
+    &:visited {
+      color: $black;
+    }
+  }
+
+  .pagination-list {
+
+    li {
+
+      .pagination-link {
+        display: inline-block;
+        padding: 10px 15px;
+        height: inherit;
+        color: $black;
+        background-color: $color-gray-100;
+        border-radius: 0;
+        border: none;
+
+        &.is-current {
+          color: $white;
+          background-color: $black;
+        }
+      }
+    }
+  }
+
+  .pagination-previous, .pagination-list, .pagination-next {
+    float: left;
+    font-size: 12px;
+  }
+}
+
+// SEARCH FORM
+.search-form {
+
+  input[type="text"], input[type="search"], input[type="email"] {
+    padding: 10px 20px;
+    border: 1px solid $black;
+    border-radius: 0;
+
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+
+  input[type="submit"], input[type="button"], button {
+    padding: 15px 30px;
+    color: $white;
+    font-size: 16px;
+    background-color: $black;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+  }
+}

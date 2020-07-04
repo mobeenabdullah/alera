@@ -1,0 +1,72 @@
+// PAGE HEADER
+.page-header {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-bottom: 1px solid $color-gray-300;
+
+  .page-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: $black;
+
+    a {
+      color: $black;
+    }
+  }
+}
+
+// NOT FOUND HEADER
+.not-found-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: $black;
+
+  & + .page-content {
+    margin-top: 10px;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// SITE CONTENT
+.site-content {
+
+  .page {
+
+    .post-thumbnail {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .post-header {
+
+      .post-title {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: bold;
+        color: $black;
+
+        a {
+          color: $black;
+        }
+      }
+    }
+
+    .post-content {
+      margin-top: 20px;
+      margin-bottom: 50px;
+
+      p {
+        color: $black;
+      }
+    }
+
+    .page-content {
+      margin-top: 0;
+    }
+  }
+
+}
