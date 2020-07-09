@@ -9,7 +9,7 @@
  * Class Name: Navwalker
  * Plugin Name: Bulma Navwalker
  * Plugin URI:  https://github.com/Poruno/Bulma-Navwalker
- * Description: An extended Wordpress Navwalker object that displays Bulma framework's Navbar https://bulma.io/ in Wordpress.
+ * Description: An extended WordPress Navwalker object that displays Bulma framework's Navbar https://bulma.io/ in WordPress.
  * Author: Carlo Operio - https://www.linkedin.com/in/carlooperio/, Bulma-Framework
  * Author URI: https://github.com/wp-bootstrap
  * License: GPL-3.0+

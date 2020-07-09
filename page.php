@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-    <section class="content-area">
+    <section class="content-area" id="main-content">
 
         <header class="page-header">
             <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>

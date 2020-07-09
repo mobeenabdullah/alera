@@ -1,7 +1,7 @@
 <?php
 /*
 Class Name: bulma_pagination
-Description: Custom pagination using Bulma components (tested with Bulma 0.6.2 on Wordpress 4.9.4)
+Description: Custom pagination using Bulma components (tested with Bulma 0.6.2 on WordPress 4.9.4)
 Version: 0.2
 Author: Domenico Majorana
 */

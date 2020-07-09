@@ -34,7 +34,7 @@
         <?php $get_copyright_text = get_theme_mod('copyright_text', '&copy; 2020 - All rights reserved. Theme by <a href="https://www.mobeenabdullah.com">Mobeen Abdullah</a>'); ?>
         <?php if (!empty($get_copyright_text)) : ?>
         <div class="site-info has-text-align-center">
-            <?php echo $get_copyright_text; ?>
+            <?php echo esc_html($get_copyright_text); ?>
         </div>
         <?php endif; ?>
     </footer>

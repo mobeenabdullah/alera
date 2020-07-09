@@ -159,7 +159,7 @@ if ( ! function_exists( 'alera_woocommerce_wrapper_before' ) ) {
 	 */
 	function alera_woocommerce_wrapper_before() {
 		?>
-		<div id="primary" class="content-area">
+		<div class="content-area" id="main-content">
 			<main id="main" class="site-main" role="main">
 			<?php
 	}

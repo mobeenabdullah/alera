@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-    <section class="content-area">
+    <section class="content-area" id="main-content">
 
         <div class="container is-widescreen">
 
