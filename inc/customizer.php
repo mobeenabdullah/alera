@@ -36,12 +36,12 @@ function alera_customize_register( $wp_customize ) {
         'panel'      => 'top_bar'
     ) );
     $wp_customize->add_setting( 'phone_number' , array(
-        'default'     => '+1 234 567 890',
+        'default'     => '',
         'transport'   => 'refresh',
         'sanitize_callback'    => 'vr_sanitize_html'
     ) );
     $wp_customize->add_setting( 'email_id' , array(
-        'default'     => 'info@yourdomain.com',
+        'default'     => '',
         'transport'   => 'refresh',
         'sanitize_callback'    => 'vr_sanitize_html'
     ) );
@@ -102,7 +102,7 @@ function alera_customize_register( $wp_customize ) {
         'priority'   => 30,
     ) );
     $wp_customize->add_setting( 'featured_area_heading' , array(
-        'default'     => 'Why to Use Multiple Payment Gateways for WooCommerce',
+        'default'     => '',
         'transport'   => 'refresh',
         'sanitize_callback'    => 'vr_sanitize_html'
     ) );
@@ -112,7 +112,7 @@ function alera_customize_register( $wp_customize ) {
         'settings'   => 'featured_area_heading',
     ) ) );
     $wp_customize->add_setting( 'featured_area_description' , array(
-        'default'     => 'You are running an e-commerce platform maintaining a single payment gateway and you feel',
+        'default'     => '',
         'transport'   => 'refresh',
         'sanitize_callback'    => 'vr_sanitize_html'
     ) );
@@ -132,48 +132,7 @@ function alera_customize_register( $wp_customize ) {
         'section'    => 'featured_area',
         'settings'   => 'featured_area_background_image',
     ) ) );
-    $wp_customize->add_setting( 'featured_area_primary_button_title' , array(
-        'default'     => 'Read More',
-        'transport'   => 'refresh',
-        'sanitize_callback'    => 'vr_sanitize_html'
-    ) );
-    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_primary_button_title', array(
-        'label'        => 'Primary Button Title',
-        'section'    => 'featured_area',
-        'settings'   => 'featured_area_primary_button_title',
-    ) ) );
-    $wp_customize->add_setting( 'featured_area_primary_button_link' , array(
-        'default'     => 'http://somelink.com',
-        'transport'   => 'refresh',
-        'sanitize_callback'    => 'vr_sanitize_html'
-    ) );
-    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_primary_button_link', array(
-        'label'        => 'Primary Button Link',
-        'type'         => 'url',
-        'section'    => 'featured_area',
-        'settings'   => 'featured_area_primary_button_link',
-    ) ) );
-    $wp_customize->add_setting( 'featured_area_secondary_button_title' , array(
-        'default'     => 'Contact Us',
-        'transport'   => 'refresh',
-        'sanitize_callback'    => 'vr_sanitize_html'
-    ) );
-    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_secondary_button_title', array(
-        'label'        => 'Secondary Button Title',
-        'section'    => 'featured_area',
-        'settings'   => 'featured_area_secondary_button_title',
-    ) ) );
-    $wp_customize->add_setting( 'featured_area_secondary_button_link' , array(
-        'default'     => 'http://somelink.com',
-        'transport'   => 'refresh',
-        'sanitize_callback'    => 'vr_sanitize_html'
-    ) );
-    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_secondary_button_link', array(
-        'label'        => 'Secondary Button Link',
-        'type'         => 'url',
-        'section'    => 'featured_area',
-        'settings'   => 'featured_area_secondary_button_link',
-    ) ) );
+
     // FOOTER SETTINGS
     $wp_customize->add_section( 'footer' , array(
         'title'      => 'Footer',

@@ -30,12 +30,12 @@
                 <div class="columns">
                     <div class="column">
                         <ul class="top-bar-contact-info">
-                            <?php $get_phone_number = esc_html(get_theme_mod('phone_number', '+1 234 567 890')); ?>
+                            <?php $get_phone_number = esc_html(get_theme_mod('phone_number')); ?>
                             <?php if (!empty($get_phone_number)) : ?>
                             <li>Call: <?php echo $get_phone_number; ?></li>
                             <?php endif; ?>
 
-                            <?php $get_email_id = esc_html(get_theme_mod('email_id', 'info@yourdomain.com')); ?>
+                            <?php $get_email_id = esc_html(get_theme_mod('email_id')); ?>
                             <?php if (!empty($get_email_id)) : ?>
                             <li>Email: <?php echo $get_email_id; ?></li>
                             <?php endif; ?>
@@ -49,7 +49,7 @@
                             WP_Filesystem();
                         ?>
                         <ul class="top-bar-social-icons">
-                            <?php $get_twitter = esc_html(get_theme_mod('twitter_username', 'twitter-username')); ?>
+                            <?php $get_twitter = esc_html(get_theme_mod('twitter_username')); ?>
                             <?php if (!empty($get_twitter)) : ?>
                                 <li>
                                     <a href="https://twitter.com/<?php echo $get_twitter; ?>" target="_blank">
@@ -59,7 +59,7 @@
                                     </a>
                                 </li>
                             <?php endif; ?>
-                            <?php $get_facebook = esc_html(get_theme_mod('facebook_username', 'facebook-username')); ?>
+                            <?php $get_facebook = esc_html(get_theme_mod('facebook_username')); ?>
                             <?php if (!empty($get_facebook)) : ?>
                             <li>
                                 <a href="https://facebook.com/<?php echo $get_facebook; ?>" target="_blank">
@@ -69,7 +69,7 @@
                                 </a>
                             </li>
                             <?php endif; ?>
-                            <?php $get_instagram = esc_html(get_theme_mod('instagram_username', 'instagram-username')); ?>
+                            <?php $get_instagram = esc_html(get_theme_mod('instagram_username')); ?>
                             <?php if (!empty($get_instagram)) : ?>
                             <li>
                                 <a href="https://instagram.com/<?php echo $get_instagram; ?>" target="_blank">
@@ -79,7 +79,7 @@
                                 </a>
                             </li>
                             <?php endif; ?>
-                            <?php $get_youtube = esc_html(get_theme_mod('youtube_channel_url', 'youtube-channel-url')); ?>
+                            <?php $get_youtube = esc_html(get_theme_mod('youtube_channel_url')); ?>
                             <?php if (!empty($get_youtube)) : ?>
                             <li>
                                 <a href="<?php echo $get_youtube; ?>" target="_blank">
@@ -145,33 +145,15 @@
     <!-- HERO -->
     <section class="site-hero" <?php $get_featured_area_background_image = esc_attr(get_theme_mod('featured_area_background_image')); if (!empty($get_featured_area_background_image)) { ?> style="background-image: url('<?php echo $get_featured_area_background_image; ?>');" <?php } ?>>
         <div class="site-hero-content">
-            <?php $get_featured_area_heading = esc_html(get_theme_mod('featured_area_heading', 'Why to Use Multiple Payment Gateways for WooCommerce')); ?>
+            <?php $get_featured_area_heading = esc_html(get_theme_mod('featured_area_heading')); ?>
             <?php if (!empty($get_featured_area_heading)) : ?>
             <h2><?php echo $get_featured_area_heading; ?></h2>
             <?php endif; ?>
 
-            <?php $get_featured_area_description = esc_html(get_theme_mod('featured_area_description', 'You are running an e-commerce platform maintaining a single payment gateway and you feel')); ?>
+            <?php $get_featured_area_description = esc_html(get_theme_mod('featured_area_description')); ?>
             <?php if (!empty($get_featured_area_description)) : ?>
             <p><?php echo $get_featured_area_description; ?></p>
             <?php endif; ?>
-            <ul class="hero-buttons">
-                <?php
-                    $get_featured_area_primary_button_title = esc_html(get_theme_mod('featured_area_primary_button_title', 'Read More'));
-                    $get_featured_area_primary_button_link = esc_url(get_theme_mod('featured_area_primary_button_link', 'http://somelink.com'));
-                ?>
-                <?php if (!empty($get_featured_area_primary_button_title)) : ?>
-                <li>
-                    <a href="<?php echo $get_featured_area_primary_button_link; ?>" class="button button-white"><?php echo $get_featured_area_primary_button_title; ?></a>
-                </li>
-                <?php endif; ?>
-                <?php
-                    $get_featured_area_secondary_button_title = esc_html(get_theme_mod('featured_area_secondary_button_title', 'Contact Us'));
-                    $get_featured_area_secondary_button_link = esc_url(get_theme_mod('featured_area_secondary_button_link', 'http://somelink.com'));
-                ?>
-                <li>
-                    <a href="<?php echo $get_featured_area_secondary_button_link; ?>" class="button"><?php echo $get_featured_area_secondary_button_title; ?></a>
-                </li>
-            </ul>
         </div>
     </section>
     <!-- ./HERO -->
