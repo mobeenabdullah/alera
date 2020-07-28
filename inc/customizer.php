@@ -96,43 +96,6 @@ function alera_customize_register( $wp_customize ) {
         'settings'   => 'youtube_channel_url',
     ) ) );
 
-    // FEATURED AREA SETTINGS
-    $wp_customize->add_section( 'featured_area' , array(
-        'title'      => 'Featured Area',
-        'priority'   => 30,
-    ) );
-    $wp_customize->add_setting( 'featured_area_heading' , array(
-        'default'     => '',
-        'transport'   => 'refresh',
-        'sanitize_callback'    => 'vr_sanitize_html'
-    ) );
-    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_heading', array(
-        'label'        => 'Heading',
-        'section'    => 'featured_area',
-        'settings'   => 'featured_area_heading',
-    ) ) );
-    $wp_customize->add_setting( 'featured_area_description' , array(
-        'default'     => '',
-        'transport'   => 'refresh',
-        'sanitize_callback'    => 'vr_sanitize_html'
-    ) );
-    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_description', array(
-        'label'        => 'Description',
-        'type'         => 'textarea',
-        'section'    => 'featured_area',
-        'settings'   => 'featured_area_description',
-    ) ) );
-    $wp_customize->add_setting( 'featured_area_background_image' , array(
-        'transport'   => 'refresh',
-        'sanitize_callback'    => 'vr_sanitize_html'
-    ) );
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'featured_area_background_image', array(
-        'label'        => 'Background Image',
-        'type'         => 'upload',
-        'section'    => 'featured_area',
-        'settings'   => 'featured_area_background_image',
-    ) ) );
-
     // FOOTER SETTINGS
     $wp_customize->add_section( 'footer' , array(
         'title'      => 'Footer',

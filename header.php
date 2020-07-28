@@ -142,21 +142,3 @@
         </div>
     </header>
     <!-- ./HEADER -->
-
-    <?php if ( is_home() ) : ?>
-    <!-- HERO -->
-    <section class="site-hero" <?php $get_featured_area_background_image = esc_attr(get_theme_mod('featured_area_background_image')); if (!empty($get_featured_area_background_image)) { ?> style="background-image: url('<?php echo $get_featured_area_background_image; ?>');" <?php } ?>>
-        <div class="site-hero-content">
-            <?php $get_featured_area_heading = esc_html(get_theme_mod('featured_area_heading')); ?>
-            <?php if (!empty($get_featured_area_heading)) : ?>
-            <h2><?php echo $get_featured_area_heading; ?></h2>
-            <?php endif; ?>
-
-            <?php $get_featured_area_description = esc_html(get_theme_mod('featured_area_description')); ?>
-            <?php if (!empty($get_featured_area_description)) : ?>
-            <p><?php echo $get_featured_area_description; ?></p>
-            <?php endif; ?>
-        </div>
-    </section>
-    <!-- ./HERO -->
-    <?php endif; ?>
