@@ -1,2 +1,2 @@
 # Alera
-Custom theme for WordPress blogs based on Bulma
+Fast, Lightweight and Responsive WordPress Theme
