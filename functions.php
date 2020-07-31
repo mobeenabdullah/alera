@@ -19,8 +19,6 @@ if ( ! function_exists( 'alera_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Alera, use a find and replace
-		 * to change 'alera' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'alera', get_template_directory() . '/languages' );
 
@@ -154,6 +152,8 @@ add_action( 'widgets_init', 'alera_widgets_init' );
  */
 function alera_scripts() {
 	wp_enqueue_style( 'alera-style', get_stylesheet_uri() );
+
+    wp_enqueue_style( 'alera-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap', array(), null );
 
     wp_enqueue_style( 'alera-custom-style', get_template_directory_uri() . '/css/main.css', array(), '1.0.0' );
 
