@@ -31,7 +31,7 @@ add_action( 'after_setup_theme', 'alera_woocommerce_setup' );
 function alera_woocommerce_scripts() {
 	wp_enqueue_style( 'alera-woocommerce-style', get_template_directory_uri() . '/woocommerce.css' );
 
-	$font_path   = WC()->plugin_url() . '/assets/fonts/';
+	$font_path   = esc_url(WC()->plugin_url() . '/assets/fonts/');
 	$inline_font = '@font-face {
 			font-family: "star";
 			src: url("' . $font_path . 'star.eot");
