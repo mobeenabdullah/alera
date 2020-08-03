@@ -15,11 +15,6 @@ function alera_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	// Removing Default Sections
-	$wp_customize->remove_section('header_image');
-    $wp_customize->remove_section('background_image');
-    $wp_customize->remove_section('colors');
-
     // TOP BAR SETTINGS
     $wp_customize->add_panel('top_bar',array(
         'title'=>'Top Bar',
