@@ -7,7 +7,7 @@ Author: Domenico Majorana
 */
 
 
-function bulma_pagination() {
+function alera_bulma_pagination() {
   global $wp_query;
   $big = 999999999; //I trust StackOverflow.
   $total_pages = $wp_query->max_num_pages; //you can set a custom int value to this var

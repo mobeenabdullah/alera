@@ -82,10 +82,10 @@
 			$args     	 = wp_parse_args( $args, $defaults );
 
 			$indent      = ( $depth ) ? str_repeat( "\t", $depth ) : '';
-			$class_names = $this->get_item_classes( $item, $args );
+			$class_names = $this->alera_get_item_classes( $item, $args );
 			$id          = apply_filters( 'nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args );
 			$id          = $id ? ' id="' . esc_attr( $id ) . '"' : '';
-			$attributes  = $this->get_item_attributes( $item, $args );
+			$attributes  = $this->alera_get_item_attributes( $item, $args );
 
 			$show_title_class = 'fa-show-title';
 			// we're going to show the title of the link by default
@@ -193,7 +193,7 @@
 			parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
 		}
 
-		private function get_item_classes( $item, $args ) {
+		private function alera_get_item_classes( $item, $args ) {
 			$classes     = empty( $item->classes ) ? array() : (array) $item->classes;
 			$classes[]   = 'menu-item-' . $item->ID;
 			$classes[]   = 'navbar-item';
@@ -208,7 +208,7 @@
 			return $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 		}
 
-		private function get_item_attributes( $item, $args ) {
+		private function alera_get_item_attributes( $item, $args ) {
 			$atts = array();
 			if ( empty( $item->attr_title ) ) {
 				$atts['title'] = ! empty( $item->title ) ? strip_tags( $item->title ) : '';
