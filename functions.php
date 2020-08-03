@@ -172,7 +172,7 @@ add_action( 'wp_enqueue_scripts', 'alera_scripts' );
 /**
  * HTML sanitization callback.
  */
-function vr_sanitize_html( $html ) {
+function alera_vr_sanitize_html( $html ) {
     return wp_filter_post_kses( $html );
 }
 
