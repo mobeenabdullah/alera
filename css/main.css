@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -5014,6 +5015,7 @@ a.navbar-item,
           .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown .dropdown:after {
             display: none; }
         .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown .navbar-dropdown {
+          max-width: 100%;
           padding-top: 0;
           border-top: none; }
       .header .navbar .navbar-menu .navbar-item:first-child {
