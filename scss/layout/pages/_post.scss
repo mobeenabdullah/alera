@@ -219,10 +219,10 @@
           }
 
           textarea {
+            padding: 10px;
             width: 100%;
             border-radius: 0;
             border-color: $color-gray-300;
-            outline: none;
             box-shadow: none;
           }
 
@@ -230,7 +230,6 @@
             width: 100%;
             border-radius: 0;
             border-color: $color-gray-300;
-            outline: none;
             box-shadow: none;
           }
 
@@ -241,7 +240,6 @@
             border-radius: 0;
             color: $white;
             background-color: $black;
-            outline: none;
             box-shadow: none;
             cursor: pointer;
           }

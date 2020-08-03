@@ -4933,8 +4933,6 @@ a.navbar-item,
   padding: 10px 20px;
   border: 1px solid #0a0a0a;
   border-radius: 0; }
-  .search-form input[type="text"]:active, .search-form input[type="text"]:focus, .search-form input[type="search"]:active, .search-form input[type="search"]:focus, .search-form input[type="email"]:active, .search-form input[type="email"]:focus {
-    outline: none; }
 
 .search-form input[type="submit"], .search-form input[type="button"], .search-form button {
   padding: 15px 30px;
@@ -5018,6 +5016,8 @@ a.navbar-item,
           max-width: 100%;
           padding-top: 0;
           border-top: none; }
+          .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown .navbar-dropdown .menu-item {
+            max-width: 100%; }
       .header .navbar .navbar-menu .navbar-item:first-child {
         margin-left: 0; }
       .header .navbar .navbar-menu .navbar-item:hover {
@@ -5119,8 +5119,6 @@ a.navbar-item,
     padding: 10px 20px;
     border: 1px solid #0a0a0a;
     border-radius: 0; }
-    .widget input[type="text"]:active, .widget input[type="text"]:focus, .widget input[type="search"]:active, .widget input[type="search"]:focus, .widget input[type="email"]:active, .widget input[type="email"]:focus {
-      outline: none; }
   .widget input[type="submit"], .widget input[type="button"], .widget button {
     padding: 15px 30px;
     color: white;
@@ -5325,16 +5323,15 @@ a.navbar-item,
       font-size: 16px;
       color: #0a0a0a; }
     .site-content .comments-area .comment-respond .comment-form p textarea {
+      padding: 10px;
       width: 100%;
       border-radius: 0;
       border-color: #EAEAEA;
-      outline: none;
       box-shadow: none; }
     .site-content .comments-area .comment-respond .comment-form p input[type="text"], .site-content .comments-area .comment-respond .comment-form p input[type="email"], .site-content .comments-area .comment-respond .comment-form p input[type="url"] {
       width: 100%;
       border-radius: 0;
       border-color: #EAEAEA;
-      outline: none;
       box-shadow: none; }
     .site-content .comments-area .comment-respond .comment-form p input[type="submit"] {
       display: inline-block;
@@ -5343,7 +5340,6 @@ a.navbar-item,
       border-radius: 0;
       color: white;
       background-color: #0a0a0a;
-      outline: none;
       box-shadow: none;
       cursor: pointer; }
   .site-content .comments-area .comment-respond .comment-form .comment-form-cookies-consent label {
