@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <?php $get_copyright_text = get_theme_mod('copyright_text', '&copy; 2020 - All rights reserved. Theme by Mobeen Abdullah'); ?>
+        <?php $get_copyright_text = __(get_theme_mod('copyright_text', '&copy; 2020 - All rights reserved. Theme by Mobeen Abdullah'), 'alera'); ?>
         <?php if (!empty($get_copyright_text)) : ?>
         <div class="site-info has-text-align-center">
             <?php echo esc_html($get_copyright_text); ?>
