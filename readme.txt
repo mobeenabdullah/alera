@@ -20,5 +20,14 @@ Alera is a responsive, fast, minimal and clean WordPress theme specifically buil
 * Used Bulma as a CSS framework https://bulma.io/, [MIT](https://opensource.org/licenses/MIT)
 * Bulma Pagination https://github.com/Nicuz/Bulma-WordPress-snippets
 * Bulma Navwalker https://github.com/ridgey28/WP-Bulma-Navwalker
-* Graphic used in the Screenshot is custom created, [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* FontAwesome Icons are used: https://fontawesome.com/
+* Social Icons SVGs are custom created, [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* Featured Image: https://pxhere.com/en/photo/723648
+* First Post Image: https://pxhere.com/en/photo/1575617
+
+== License ==
+
+Alera WordPress Theme, Copyright 2020 WordPress.org
+Alera is distributed under the terms of the GNU GPL.
+
+Alera is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
