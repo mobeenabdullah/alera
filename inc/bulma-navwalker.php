@@ -263,7 +263,7 @@
 					echo ' class="' . esc_attr( $menu_class ) . '"';
 				}
 				echo '>';
-				echo '<a class="navbar-item" href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="">' . esc_attr( 'Add a menu', 'worldoweb' ) . '</a>';
+				echo '<a class="navbar-item" href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="">' . esc_html__( 'Add a menu', 'worldoweb' ) . '</a>';
 				echo '</div>';
 				if ( $container ) {
 					echo '</' . esc_attr( $container ) . '>';

@@ -31,9 +31,9 @@ function alera_bulma_pagination() {
 
       //Disable Previous button if the current page is the first one
         if ($paged == 1) {
-          echo '<a class="pagination-previous" disabled>Previous</a>';
+          echo '<a class="pagination-previous" disabled>' . esc_html__( 'Previous', 'alera' ) . '</a>';
         } else {
-          echo '<a class="pagination-previous" href="' . esc_url(get_previous_posts_page_link()) . '">Previous</a>';
+          echo '<a class="pagination-previous" href="' . esc_url(get_previous_posts_page_link()) . '">' . esc_html__( 'Previous', 'alera' ) . '</a>';
         }
 
       //Disable Next button if the current page is the last one
@@ -54,9 +54,9 @@ function alera_bulma_pagination() {
         echo '</ul>';
 
         if ($paged<$total_pages) {
-            echo '<a class="pagination-next" href="' . esc_url(get_next_posts_page_link()) . '">Next</a>';
+            echo '<a class="pagination-next" href="' . esc_url(get_next_posts_page_link()) . '">' . esc_html__( 'Next', 'alera' ) . '</a>';
         } else {
-            echo '<a class="pagination-next" disabled>Next</a>';
+            echo '<a class="pagination-next" disabled>' . esc_html__( 'Next', 'alera' ) . '</a>';
         }
 
     echo '</div>';

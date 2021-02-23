@@ -48,7 +48,7 @@
 	</div>
 
     <?php if ( ! is_singular() ) : ?>
-        <a href="<?php echo esc_url( get_permalink() ); ?>" class="button button-bordered">Read More</a>
+        <a href="<?php echo esc_url( get_permalink() ); ?>" class="button button-bordered"><?php echo esc_html__( 'Read More', 'alera' ); ?></a>
     <?php endif; ?>
 
 </article>

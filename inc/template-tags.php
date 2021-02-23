@@ -129,11 +129,11 @@ if ( ! function_exists( 'alera_post_meta' ) ) :
 
         if ( 'post' === get_post_type() ) :
             echo '<ul class="post-meta-details">';
-                echo '<li>'. esc_html($date_posted) . '</li>';
+                echo '<li>'. $date_posted . '</li>';
                 if ( $categories_list ) {
-                    echo '<li>' . esc_html($categories_list) . '</li>';
+                    echo '<li>' . $categories_list . '</li>';
                 }
-                echo '<li>'. esc_html($author_info) . '</li>';
+                echo '<li>'. $author_info . '</li>';
             echo '</ul>';
         endif;
 
