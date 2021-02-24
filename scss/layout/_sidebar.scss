@@ -5,14 +5,14 @@
 
   .widget-title {
     margin-bottom: 20px;
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid $primary-color;
 
     .widget-title-text {
       display: inline-block;
       padding: 10px 20px;
       color: $white;
       font-weight: 500;
-      background-color: $black;
+      background-color: $primary-color;
       text-transform: uppercase;
 
       a {
@@ -89,7 +89,7 @@
     padding: 15px 30px;
     color: $white;
     font-size: 16px;
-    background-color: $black;
+    background-color: $primary-color;
     border: none;
     border-radius: 0;
     cursor: pointer;

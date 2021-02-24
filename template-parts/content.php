@@ -33,17 +33,16 @@
 
 	<div class="post-content">
 		<?php
+            if (is_singular()) :
+                the_content();
+            else :
+                the_excerpt();
+            endif;
 
-        if (is_singular()) :
-            the_content();
-        else :
-            the_excerpt();
-        endif;
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'alera' ),
-			'after'  => '</div>',
-		) );
+            wp_link_pages( array(
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'alera' ),
+                'after'  => '</div>'
+            ) );
 		?>
 	</div>
 

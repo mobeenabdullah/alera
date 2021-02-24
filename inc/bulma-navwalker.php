@@ -75,7 +75,7 @@
 				'link_after'      => '',
 				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 				'item_spacing'    => 'preserve',
-				'depth'           => 0,
+				'depth'           => 2,
 				'walker'          => '',
 				'theme_location'  => '',
 			);

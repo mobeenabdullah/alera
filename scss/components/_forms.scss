@@ -3,27 +3,27 @@
   padding: 8px 16px;
   color: $white;
   font-size: 16px;
-  background-color: $black;
+  background-color: $primary-color;
   border: none;
   border-radius: 0;
 
   &.button-white {
-    color: $black;
+    color: $primary-color;
     background-color: $white;
 
     &:visited {
-      color: $black;
+      color: $primary-color;
     }
   }
 
   &.button-bordered {
-    color: $black;
+    color: $primary-color;
     background-color: transparent;
-    border: 1px solid $black;
+    border: 1px solid $primary-color;
 
     &:hover  {
       color: $white;
-      background-color: $black;
+      background-color: $primary-color;
 
       &:visited {
         color: $white;
@@ -31,7 +31,7 @@
     }
 
     &:visited {
-      color: $black;
+      color: $primary-color;
     }
   }
 
@@ -40,65 +40,12 @@
   }
 }
 
-// POSTS PAGINATIoN
-.posts-pagination {
-
-  .pagination-previous, .pagination-next {
-    display: inline-block;
-    padding: 10px 15px;
-    height: inherit;
-    color: $black;
-    background-color: $color-gray-100;
-    border-radius: 0;
-    border: none;
-
-    &:hover {
-      color: $white;
-      background-color: $black;
-
-      &:visited {
-        color: $white;
-      }
-    }
-
-    &:visited {
-      color: $black;
-    }
-  }
-
-  .pagination-list {
-
-    li {
-
-      .pagination-link {
-        display: inline-block;
-        padding: 10px 15px;
-        height: inherit;
-        color: $black;
-        background-color: $color-gray-100;
-        border-radius: 0;
-        border: none;
-
-        &.is-current {
-          color: $white;
-          background-color: $black;
-        }
-      }
-    }
-  }
-
-  .pagination-previous, .pagination-list, .pagination-next {
-    float: left;
-    font-size: 12px;
-  }
-}
-
 // SEARCH FORM
 .search-form {
 
   input[type="text"], input[type="search"], input[type="email"] {
     padding: 10px 20px;
-    border: 1px solid $black;
+    border: 1px solid $primary-color;
     border-radius: 0;
   }
 
@@ -106,7 +53,7 @@
     padding: 15px 30px;
     color: $white;
     font-size: 16px;
-    background-color: $black;
+    background-color: $primary-color;
     border: none;
     border-radius: 0;
     cursor: pointer;

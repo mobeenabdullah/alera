@@ -37,7 +37,7 @@ get_header();
 
                             endwhile;
 
-                                alera_bulma_pagination();
+                            the_posts_pagination();
 
                             else :
 
