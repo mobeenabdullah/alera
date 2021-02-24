@@ -33,12 +33,12 @@ function alera_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'phone_number' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_vr_sanitize_number_absint'
     ) );
     $wp_customize->add_setting( 'email_id' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_vr_sanitize_email'
     ) );
     $wp_customize->add_setting( 'twitter_username' , array(
         'default'     => '',
@@ -62,31 +62,37 @@ function alera_customize_register( $wp_customize ) {
     ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'phone_number', array(
         'label'        => __('Phone Number', 'alera'),
+        'type'      =>  'number',
         'section'    => 'contact_details',
-        'settings'   => 'phone_number',
+        'settings'   => 'phone_number'
     ) ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'email_id', array(
         'label'        => __('Email', 'alera'),
+        'type'      =>  'email',
         'section'    => 'contact_details',
         'settings'   => 'email_id',
     ) ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'twitter_username', array(
         'label'        => __('Twitter Username', 'alera'),
+        'type'      =>  'text',
         'section'    => 'social_icons',
         'settings'   => 'twitter_username',
     ) ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'facebook_username', array(
         'label'        => __('Facebook Username', 'alera'),
+        'type'      =>  'text',
         'section'    => 'social_icons',
         'settings'   => 'facebook_username',
     ) ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'instagram_username', array(
         'label'        => __('Instagram Username', 'alera'),
+        'type'      =>  'text',
         'section'    => 'social_icons',
         'settings'   => 'instagram_username',
     ) ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'youtube_channel_url', array(
         'label'        => __('YouTube Channel URL', 'alera'),
+        'type'      =>  'text',
         'section'    => 'social_icons',
         'settings'   => 'youtube_channel_url',
     ) ) );
@@ -103,6 +109,7 @@ function alera_customize_register( $wp_customize ) {
     ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_heading', array(
         'label'        => __('Heading', 'alera'),
+        'type'      =>  'text',
         'section'    => 'featured_area',
         'settings'   => 'featured_area_heading',
     ) ) );
@@ -119,7 +126,7 @@ function alera_customize_register( $wp_customize ) {
     ) ) );
     $wp_customize->add_setting( 'featured_area_background_image' , array(
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_vr_sanitize_image'
     ) );
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'featured_area_background_image', array(
         'label'        => __('Background Image', 'alera'),

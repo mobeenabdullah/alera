@@ -165,9 +165,48 @@ add_action( 'wp_enqueue_scripts', 'alera_scripts' );
 
 /**
  * HTML sanitization callback.
+ * Sanitization: html
+ * Control: text, textarea
  */
 function alera_vr_sanitize_html( $html ) {
     return wp_filter_post_kses( $html );
+}
+
+/**
+ * Type number sanitization callback.
+ */
+function alera_vr_sanitize_number_absint( $number, $setting ) {
+	$number = absint( $number );	
+	return ( $number ? $number : $setting->default );
+}
+
+/**
+ * Type file upload sanitization callback.
+ */
+function alera_vr_sanitize_image( $image, $setting ) {
+    
+    $mimes = array(
+        'jpg|jpeg|jpe' => 'image/jpeg',
+        'gif'          => 'image/gif',
+        'png'          => 'image/png',
+        'bmp'          => 'image/bmp',
+        'tif|tiff'     => 'image/tiff',
+        'ico'          => 'image/x-icon'
+    );
+
+    $file = wp_check_filetype( $image, $mimes );
+
+    return ( $file['ext'] ? $image : $setting->default );
+}
+
+/**
+ * Type number sanitization callback.
+ */
+function alera_vr_sanitize_email( $email, $setting ) {	
+    
+    $email = sanitize_email( $email );	
+    return ( ! is_null( $email ) ? $email : $setting->default );
+    
 }
 
 /**
