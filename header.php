@@ -35,7 +35,7 @@
                             <?php $get_phone_number = get_theme_mod('phone_number'); ?>
                             <?php if (!empty($get_phone_number)) : ?>
                                 <li>
-                                    <?php echo esc_html__( 'Call:', 'alera' ); ?> 
+                                    <?php echo esc_html__( 'Call:', 'alera' ); ?>
                                     <?php echo esc_html($get_phone_number); ?>
                                 </li>
                             <?php endif; ?>
@@ -43,14 +43,14 @@
                             <?php $get_email_id = get_theme_mod('email_id'); ?>
                             <?php if (!empty($get_email_id)) : ?>
                                 <li>
-                                    <?php echo esc_html__( 'Email:', 'alera' ); ?> 
+                                    <?php echo esc_html__( 'Email:', 'alera' ); ?>
                                     <?php echo esc_html($get_email_id); ?>
-                                </li>                                
+                                </li>
                             <?php endif; ?>
 
                         </ul>
                     </div>
-                    <div class="column">                 
+                    <div class="column">
                         <ul class="top-bar-social-icons">
                             <?php $get_twitter = get_theme_mod('twitter_username'); ?>
                             <?php if (!empty($get_twitter)) : ?>
@@ -92,7 +92,7 @@
 
         <div class="container is-widescreen">
 
-            <nav class="navbar" role="navigation" aria-label="<?php echo esc_html__( 'main navigation', 'alera' ); ?>">
+            <nav class="navbar" role="navigation" aria-label="<?php echo esc_attr__( 'main navigation', 'alera' ); ?>">
                 <div class="navbar-brand">
 
                     <?php the_custom_logo(); ?>
@@ -108,11 +108,11 @@
                     <p class="site-description"><?php echo esc_html($alera_description); ?></p>
                     <?php endif; ?>
 
-                    <a href="#!" role="button" class="navbar-burger burger" aria-label="<?php echo esc_html__( 'menu', 'alera' ); ?>" aria-expanded="false" data-target="mainNavbar">
+                    <span role="button" class="navbar-burger burger" aria-label="<?php echo esc_attr__( 'menu', 'alera' ); ?>" aria-expanded="false" data-target="mainNavbar">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
-                    </a>
+                    </span>
 
                 </div>
 
@@ -120,16 +120,26 @@
 
                     <div class="navbar-end">
                         <?php
-                            wp_nav_menu(array(
-                                'theme_location' => 'primary',
-                                'depth'		    =>	3,
-                                'menu'			=>	'',
-                                'container'		=>	'',
-                                'menu_class'	=>	'',
-                                'items_wrap'	=>	'%3$s',
-                                'walker'		=>	new Bulma_NavWalker(),
-                                'fallback_cb'	=>	'Bulma_NavWalker::fallback'
-                            ));
+                            // wp_nav_menu(array(
+                            //     'theme_location' => 'primary',
+                            //     'depth'		    =>	3,
+                            //     'menu'			=>	'',
+                            //     'container'		=>	'',
+                            //     'menu_class'	=>	'',
+                            //     'items_wrap'	=>	'%3$s',
+                            //     'walker'		=>	new Bulma_NavWalker(),
+                            //     'fallback_cb'	=>	'Bulma_NavWalker::fallback'
+                            // ));
+                            wp_nav_menu( array(
+                                'theme_location'    => 'primary',
+                                'depth'             => 3,
+                                'container'         => false,
+                                // 'items_wrap'     => 'div',
+                                'menu_class'        => 'navbar-menu',
+                                'menu_id'           => 'primary-menu',
+                                'after'             => "</div>",
+                                'walker'            => new Navwalker())
+                            );
                         ?>
                     </div>
 

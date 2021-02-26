@@ -41,7 +41,7 @@ if ( ! function_exists( 'alera_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// Requiring Navwalker
-        require_once('inc/bulma-navwalker.php');
+        require_once('inc/navwalker.php');
 
 		// This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
@@ -164,9 +164,7 @@ function alera_scripts() {
 add_action( 'wp_enqueue_scripts', 'alera_scripts' );
 
 /**
- * HTML sanitization callback.
- * Sanitization: html
- * Control: text, textarea
+ * Type html (text, textarea) sanitization callback.
  */
 function alera_vr_sanitize_html( $html ) {
     return wp_filter_post_kses( $html );
@@ -176,15 +174,15 @@ function alera_vr_sanitize_html( $html ) {
  * Type number sanitization callback.
  */
 function alera_vr_sanitize_number_absint( $number, $setting ) {
-	$number = absint( $number );	
+	$number = absint( $number );
 	return ( $number ? $number : $setting->default );
 }
 
 /**
- * Type file upload sanitization callback.
+ * Type image upload sanitization callback.
  */
 function alera_vr_sanitize_image( $image, $setting ) {
-    
+
     $mimes = array(
         'jpg|jpeg|jpe' => 'image/jpeg',
         'gif'          => 'image/gif',
@@ -200,13 +198,13 @@ function alera_vr_sanitize_image( $image, $setting ) {
 }
 
 /**
- * Type number sanitization callback.
+ * Type email sanitization callback.
  */
-function alera_vr_sanitize_email( $email, $setting ) {	
-    
-    $email = sanitize_email( $email );	
+function alera_vr_sanitize_email( $email, $setting ) {
+
+    $email = sanitize_email( $email );
     return ( ! is_null( $email ) ? $email : $setting->default );
-    
+
 }
 
 /**
