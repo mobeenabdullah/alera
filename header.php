@@ -122,7 +122,7 @@
                         <?php
                             wp_nav_menu( array(
                                 'theme_location'    => 'primary',
-                                'depth'             => 3,
+                                'depth'             => 5,
                                 'container'         => false,
                                 'menu_class'        => 'navbar-menu',
                                 'menu_id'           => 'primary-menu',

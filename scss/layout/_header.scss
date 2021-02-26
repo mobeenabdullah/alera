@@ -92,7 +92,15 @@
         margin-left: 20px;
         color: $black;
 
+        .navbar-link {
+          color: $black;
+        }
+
         &.has-dropdown {
+
+          .navbar-link {
+            background-color: transparent;
+          }
 
           .navbar-item {
             margin-left: 0;
@@ -103,10 +111,19 @@
           }
 
           .navbar-dropdown {
+            border-top: 2px solid #dbdbdb;
 
             .has-dropdown {
               padding-top: 0;
               padding-bottom: 0;
+
+              .navbar-link {
+                padding: 8px 0;
+
+                &:after {
+                  display: none;
+                }
+              }
 
               .dropdown {
                 padding-left: 0;
@@ -118,12 +135,21 @@
               }
 
               .navbar-dropdown {
+                display: none;
+                top: 0;
+                left: 100%;
                 max-width: 100%;
                 padding-top: 0;
-                border-top: none;
 
                 .menu-item {
                   max-width: 100%;
+                }
+              }
+
+              &:hover {
+
+                & > .navbar-dropdown {
+                  display: block;
                 }
               }
             }
