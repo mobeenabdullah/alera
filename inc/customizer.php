@@ -33,32 +33,32 @@ function alera_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'phone_number' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_number_absint'
+        'sanitize_callback'    => 'alera_sanitize_number_absint'
     ) );
     $wp_customize->add_setting( 'email_id' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_email'
+        'sanitize_callback'    => 'alera_sanitize_email'
     ) );
     $wp_customize->add_setting( 'twitter_username' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_sanitize_html'
     ) );
     $wp_customize->add_setting( 'facebook_username' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_sanitize_html'
     ) );
     $wp_customize->add_setting( 'instagram_username' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_sanitize_html'
     ) );
     $wp_customize->add_setting( 'youtube_channel_url' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_sanitize_html'
     ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'phone_number', array(
         'label'        => __('Phone Number', 'alera'),
@@ -105,7 +105,7 @@ function alera_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'featured_area_heading' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_sanitize_html'
     ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_heading', array(
         'label'        => __('Heading', 'alera'),
@@ -116,7 +116,7 @@ function alera_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'featured_area_description' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_sanitize_html'
     ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_description', array(
         'label'        => __('Description', 'alera'),
@@ -126,7 +126,7 @@ function alera_customize_register( $wp_customize ) {
     ) ) );
     $wp_customize->add_setting( 'featured_area_background_image' , array(
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_image'
+        'sanitize_callback'    => 'alera_sanitize_image'
     ) );
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'featured_area_background_image', array(
         'label'        => __('Background Image', 'alera'),
@@ -144,7 +144,7 @@ function alera_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'copyright_text' , array(
         'default'     => __('(c) 2020 - All rights reserved. Theme by Mobeen Abdullah', 'alera'),
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_vr_sanitize_html'
+        'sanitize_callback'    => 'alera_sanitize_html'
     ) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'copyright_text', array(
         'label'        => __('Copyright Text', 'alera'),

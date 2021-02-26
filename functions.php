@@ -166,14 +166,14 @@ add_action( 'wp_enqueue_scripts', 'alera_scripts' );
 /**
  * Type html (text, textarea) sanitization callback.
  */
-function alera_vr_sanitize_html( $html ) {
+function alera_sanitize_html( $html ) {
     return wp_filter_post_kses( $html );
 }
 
 /**
  * Type number sanitization callback.
  */
-function alera_vr_sanitize_number_absint( $number, $setting ) {
+function alera_sanitize_number_absint( $number, $setting ) {
 	$number = absint( $number );
 	return ( $number ? $number : $setting->default );
 }
@@ -181,7 +181,7 @@ function alera_vr_sanitize_number_absint( $number, $setting ) {
 /**
  * Type image upload sanitization callback.
  */
-function alera_vr_sanitize_image( $image, $setting ) {
+function alera_sanitize_image( $image, $setting ) {
 
     $mimes = array(
         'jpg|jpeg|jpe' => 'image/jpeg',
@@ -200,7 +200,7 @@ function alera_vr_sanitize_image( $image, $setting ) {
 /**
  * Type email sanitization callback.
  */
-function alera_vr_sanitize_email( $email, $setting ) {
+function alera_sanitize_email( $email, $setting ) {
 
     $email = sanitize_email( $email );
     return ( ! is_null( $email ) ? $email : $setting->default );

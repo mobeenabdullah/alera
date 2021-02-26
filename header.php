@@ -120,21 +120,10 @@
 
                     <div class="navbar-end">
                         <?php
-                            // wp_nav_menu(array(
-                            //     'theme_location' => 'primary',
-                            //     'depth'		    =>	3,
-                            //     'menu'			=>	'',
-                            //     'container'		=>	'',
-                            //     'menu_class'	=>	'',
-                            //     'items_wrap'	=>	'%3$s',
-                            //     'walker'		=>	new Bulma_NavWalker(),
-                            //     'fallback_cb'	=>	'Bulma_NavWalker::fallback'
-                            // ));
                             wp_nav_menu( array(
                                 'theme_location'    => 'primary',
                                 'depth'             => 3,
                                 'container'         => false,
-                                // 'items_wrap'     => 'div',
                                 'menu_class'        => 'navbar-menu',
                                 'menu_id'           => 'primary-menu',
                                 'after'             => "</div>",
