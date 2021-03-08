@@ -1,0 +1,21 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+// iPad Landscape
+@media screen and (max-width: 1024px) {
+  .site-description {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+      .top-bar-contact-info {
+        li {
+          margin-right: 5px !important;
+          padding-right: 5px !important;
+        }
+      }
+}

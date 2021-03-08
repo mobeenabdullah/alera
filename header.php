@@ -30,7 +30,7 @@
         <div class="top-bar">
             <div class="container is-widescreen">
                 <div class="columns">
-                    <div class="column">
+                    <div class="column  has-text-centered-mobile">
                         <ul class="top-bar-contact-info">
                             <?php $get_phone_number = get_theme_mod('phone_number'); ?>
                             <?php if (!empty($get_phone_number)) : ?>
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                     <div class="column">
-                        <ul class="top-bar-social-icons">
+                        <ul class="top-bar-social-icons has-text-centered-mobile">
                             <?php $get_twitter = get_theme_mod('twitter_username'); ?>
                             <?php if (!empty($get_twitter)) : ?>
                                 <li>

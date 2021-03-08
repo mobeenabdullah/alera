@@ -4993,7 +4993,8 @@ a.navbar-item,
   .header .navbar {
     padding: 40px 0; }
     .header .navbar .navbar-brand {
-      padding-top: 10px; }
+      padding-top: 10px;
+      margin-left: 0; }
       .header .navbar .navbar-brand .custom-logo-link {
         margin-right: 30px; }
         .header .navbar .navbar-brand .custom-logo-link img {
@@ -5095,6 +5096,12 @@ a.navbar-item,
       color: white; }
       .footer .site-info a:hover {
         text-decoration: underline; }
+  .footer .search-form {
+    display: flex; }
+    .footer .search-form label {
+      width: 75%; }
+    .footer .search-form input.search-submit {
+      width: 25%; }
 
 .widget {
   margin-bottom: 50px;
@@ -5415,3 +5422,16 @@ a.navbar-item,
 
 .site-content .page .page-content {
   margin-top: 0; }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 30px; } }
+
+@media screen and (max-width: 1024px) {
+  .site-description {
+    font-size: 14px !important; } }
+
+@media screen and (max-width: 600px) {
+  .top-bar-contact-info li {
+    margin-right: 5px !important;
+    padding-right: 5px !important; } }

@@ -18,4 +18,14 @@
       }
     }
   }
+
+  .search-form {
+    display: flex;
+    label {
+      width: 75%;
+    }
+    input.search-submit {
+      width: 25%;
+    }
+  }
 }
