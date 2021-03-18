@@ -2,20 +2,20 @@
 .site-content {
 
   .post {
-    margin: 0 0 40px 0;
-    padding-bottom: 40px;
+    margin: 0 0 4rem 0;
+    padding-bottom: 4rem;
     border-bottom: 1px solid $color-gray-300;
 
     .post-thumbnail {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
     .post-header {
 
       .post-title {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
         font-weight: bold;
         color: $black;
 
@@ -31,11 +31,11 @@
       li {
         position: relative;
         display: inline-block;
-        margin-right: 10px;
-        padding-right: 10px;
+        margin-right: 1rem;
+        padding-right: 1rem;
         color: $color-gray-500;
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 1.2rem;
+        line-height: 3rem;
         font-weight: 500;
         text-transform: uppercase;
 
@@ -65,8 +65,8 @@
     }
 
     .post-content {
-      margin-top: 20px;
-      margin-bottom: 50px;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
 
       p {
         color: $black;
@@ -75,16 +75,16 @@
   }
 
   .comments-area {
-    margin-top: 100px;
+    margin-top: 10rem;
 
     a {
       color: $black;
     }
 
     .comments-title {
-      margin: 0 0 30px 0;
-      padding-bottom: 30px;
-      font-size: 14px;
+      margin: 0 0 3rem 0;
+      padding-bottom: 3rem;
+      font-size: 1.4rem;
       font-weight: bold;
       color: $black;
       text-transform: uppercase;
@@ -96,12 +96,12 @@
       list-style-type: none;
 
       .comment {
-        margin-bottom: 30px;
-        padding-bottom: 30px;
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
         border-bottom: 1px solid $color-gray-300;
 
         ol {
-          margin-top: 20px;
+          margin-top: 2rem;
           list-style-type: none;
         }
 
@@ -110,20 +110,20 @@
           .comment-meta {
 
             .comment-author {
-              margin-bottom: 10px;
+              margin-bottom: 1rem;
 
               img {
                 float: left;
-                margin-right: 30px;
-                width: 50px;
-                height: 50px;
+                margin-right: 3rem;
+                width: 5rem;
+                height: 5rem;
                 object-fit: cover;
                 object-position: center;
                 border-radius: 50%;
               }
 
               .fn {
-                font-size: 18px;
+                font-size: 1.8rem;
                 font-weight: 500;
                 color: $black;
 
@@ -138,20 +138,20 @@
             }
 
             .comment-metadata {
-              margin-top: -10px;
-              font-size: 10px;
+              margin-top: -1rem;
+              font-size: 1rem;
             }
           }
 
           .comment-content {
-            margin-top: 10px;
-            padding-left: 80px;
+            margin-top: 1rem;
+            padding-left: 8rem;
             width: 100%;
             overflow: hidden;
 
             p, ul {
-              margin-bottom: 10px;
-              font-size: 12px;
+              margin-bottom: 1rem;
+              font-size: 1.2rem;
               color: lighten($black, 20%);
             }
           }
@@ -161,8 +161,8 @@
 
             a {
               display: inline-block;
-              padding: 4px 10px;
-              font-size: 10px;
+              padding: .4rem 1rem;
+              font-size: 1rem;
               text-decoration: none;
               background-color: $color-gray-100;
             }
@@ -180,8 +180,8 @@
     .comment-respond {
 
       .comment-reply-title {
-        margin-top: 50px;
-        font-size: 14px;
+        margin-top: 5rem;
+        font-size: 1.4rem;
         color: $black;
 
         small {
@@ -189,8 +189,8 @@
 
           #cancel-comment-reply-link {
             display: inline-block;
-            margin-top: 10px;
-            padding: 4px 10px;
+            margin-top: 1rem;
+            padding: .4rem 1rem;
             background-color: $black;
             color: $white;
           }
@@ -200,26 +200,26 @@
       .comment-form {
 
         .comment-notes {
-          font-size: 12px;
+          font-size: 1.2rem;
           color: $color-gray-500;
         }
 
         .comment-form-comment {
-          margin-top: 50px;
+          margin-top: 5rem;
         }
 
         p {
-          margin-bottom: 20px;
+          margin-bottom: 2rem;
 
           label {
             display: block;
-            margin-bottom: 5px;
-            font-size: 16px;
+            margin-bottom: .5rem;
+            font-size: 1.6rem;
             color: $black;
           }
 
           textarea {
-            padding: 10px;
+            padding: 1rem;
             width: 100%;
             border-radius: 0;
             border-color: $color-gray-300;
@@ -235,7 +235,7 @@
 
           input[type="submit"] {
             display: inline-block;
-            padding: 8px 16px;
+            padding: .8rem 1.6rem;
             border: none;
             border-radius: 0;
             color: $white;
@@ -249,8 +249,8 @@
 
           label {
             display: inline-block;
-            margin-left: 10px;
-            font-size: 14px;
+            margin-left: 1rem;
+            font-size: 1.4rem;
           }
         }
       }

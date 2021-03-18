@@ -1,12 +1,12 @@
 // PAGE HEADER
 .page-header {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
   text-align: center;
   border-bottom: 1px solid $color-gray-300;
 
   .page-title {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: bold;
     color: $black;
 
@@ -18,15 +18,15 @@
 
 // NOT FOUND HEADER
 .not-found-header {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   color: $black;
 
   & + .page-content {
-    margin-top: 10px;
+    margin-top: 1rem;
 
     p {
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
     }
   }
 }
@@ -38,14 +38,14 @@
 
     .post-thumbnail {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
     .post-header {
 
       .post-title {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
         font-weight: bold;
         color: $black;
 
@@ -56,8 +56,8 @@
     }
 
     .post-content {
-      margin-top: 20px;
-      margin-bottom: 50px;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
 
       p {
         color: $black;

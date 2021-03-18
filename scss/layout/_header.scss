@@ -3,8 +3,8 @@
   border-bottom: 1px solid $color-gray-100;
 
   .top-bar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     background-color: $primary-color;
 
     .top-bar-contact-info {
@@ -13,10 +13,10 @@
 
       li {
         display: inline-block;
-        margin-right: 20px;
-        padding-right: 20px;
+        margin-right: 2rem;
+        padding-right: 2rem;
         color: $white;
-        font-size: 12px;
+        font-size: 1.2rem;
         line-height: 1;
         border-right: 1px solid $white;
 
@@ -35,14 +35,14 @@
 
       li {
         display: inline-block;
-        margin-left: 25px;
+        margin-left: 2.5rem;
 
         a {
 
           svg {
             fill: $white;
             width: auto;
-            height: 16px;
+            height: 1.6rem;
           }
         }
 
@@ -54,24 +54,24 @@
   }
 
   .navbar {
-    padding: 40px 0;
+    padding: 4rem 0;
 
     .navbar-brand {
-      padding-top: 10px;
+      padding-top: 1rem;
       margin-left: 0;
 
       .custom-logo-link {
-        margin-right: 30px;
+        margin-right: 3rem;
 
         img {
-          max-height: 42px;
+          max-height: 4.2rem;
           width: auto;
         }
       }
 
       .site-title {
-        margin-right: 20px;
-        font-size: 36px;
+        margin-right: 2rem;
+        font-size: 3.6rem;
         font-weight: 500;
         line-height: 1;
 
@@ -81,17 +81,18 @@
       }
 
       .site-description {
-        padding-top: 5px;
-        font-size: 18px;
+        padding-top: .5rem;
+        font-size: 1.8rem;
         line-height: inherit;
       }
     }
 
     .navbar-menu {
-
       .navbar-item {
-        margin-left: 20px;
+        margin-left: 1rem;
         color: $black;
+        font-size: 1.5rem;
+        padding: 0.5rem 0.5rem;
 
         .navbar-link {
           color: $black;
@@ -105,6 +106,7 @@
 
           .navbar-item {
             margin-left: 0;
+            padding: 0.5rem 1rem;
           }
 
           .navbar-link:not(.is-arrowless)::after {
@@ -112,14 +114,14 @@
           }
 
           .navbar-dropdown {
-            border-top: 2px solid #dbdbdb;
+            border-top: .2rem solid #dbdbdb;
 
             .has-dropdown {
               padding-top: 0;
               padding-bottom: 0;
 
               .navbar-link {
-                padding: 8px 0;
+                padding: .8rem 0;
 
                 &:after {
                   display: none;
@@ -165,36 +167,55 @@
           background-color: transparent;
         }
       }
+      .page {
+        margin-bottom: 0;
+      }
+    }
+    .is-active {
+      box-shadow: none;
+      .navbar-menu {
+        display: block;
+        box-shadow: none;
+      }
     }
   }
+
+  .container {
+    & > .navbar {
+      .navbar-menu {
+        margin-right: 0  !important;
+      }
+    }
+  }
+
 }
 
 // SITE HERO
 .site-hero {
   position: relative;
-  padding: 150px 0;
+  padding: 15rem 0;
   background-size: cover;
   background-position: center;
   text-align: center;
 
   .site-hero-content {
     position: relative;
-    max-width: 840px;
+    max-width: 84rem;
     margin: 0 auto;
 
     h2 {
-      margin-bottom: 10px;
-      font-size: 48px;
-      line-height: 72px;
+      margin-bottom: 1rem;
+      font-size: 4.8rem;
+      line-height: 7.2rem;
       font-weight: bold;
       color: $white;
       text-shadow: 1px 1px 1px rgba($black, .7);
     }
 
     p {
-      margin-bottom: 30px;
-      font-size: 30px;
-      line-height: 42px;
+      margin-bottom: 3rem;
+      font-size: 3rem;
+      line-height: 4.2rem;
       color: $white;
       text-shadow: 1px 1px 1px rgba($black, .5);
     }

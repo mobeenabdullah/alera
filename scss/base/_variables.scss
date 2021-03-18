@@ -24,6 +24,12 @@ $fullhd-enabled: true;
  
 // COMPONENT VARIABLES
 $body-background-color: $beige-lighter;
-$control-border-width: 2px;
+$control-border-width: .2rem;
 $input-border-color: transparent;
 $input-shadow: none;
+
+// Responsive Variables
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;

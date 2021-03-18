@@ -1,21 +1,60 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $bp-largest) {
   .container {
-    padding: 0 30px;
+    padding: 0 3rem;
   }
 }
 
 // iPad Landscape
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 114rem) {
   .site-description {
-    font-size: 14px !important;
+    font-size: 1.4rem !important;
+  }
+  .header {
+    .navbar {
+      .navbar-menu {
+        .navbar-item {
+          margin-left: 0;
+        }
+      }
+    }
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $bp-small) {
       .top-bar-contact-info {
         li {
-          margin-right: 5px !important;
-          padding-right: 5px !important;
+          margin-right: .5rem !important;
+          padding-right: .5rem !important;
         }
       }
+
+    .header {
+      .container.is-widescreen {
+        width: 100%;
+        padding: 0;
+      }
+      .navbar-menu {
+        background-color: transparent;
+      }
+      .navbar {
+        transition: all .2s;
+        .navbar-menu {
+          padding-top: 20px;
+        }
+        .navbar-brand {
+          padding: 0 3rem;
+        }
+        .navbar-end {
+          padding: 0 2rem;
+          background: #ffffff;
+        }
+        & > .navbar-menu {
+          position: absolute;
+          top: 88px;
+          width: 100%;
+          border-top: 1px solid rgba(0,0,0,0.1);
+          padding: 0 !important;
+        }
+      }
+    }
 }

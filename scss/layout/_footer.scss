@@ -1,13 +1,13 @@
 // FOOTER
 .footer {
-  padding-top: 50px;
+  padding-top: 5rem;
   border-top: 1px solid $color-gray-300;
 
   .site-info {
-    margin-top: 50px;
-    padding: 10px 0;
+    margin-top: 5rem;
+    padding: 1rem 0;
     color: $white;
-    font-size: 12px;
+    font-size: 1.2rem;
     background-color: $black;
 
     a {
@@ -21,11 +21,18 @@
 
   .search-form {
     display: flex;
+    position: relative;
     label {
-      width: 75%;
+      width: 100%;
+      input {
+        width: 100%;
+      }
     }
     input.search-submit {
-      width: 25%;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
+
   }
 }
