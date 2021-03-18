@@ -21,7 +21,7 @@ get_header();
 
             <div class="columns is-desktop">
 
-                <div class="column is-two-thirds">
+                <div class="column is-three-quarters">
 
                     <main class="site-content">
 
@@ -48,7 +48,7 @@ get_header();
 
                 </div>
 
-                <div class="column is-one-third">
+                <div class="column">
                     <?php get_sidebar(); ?>
                 </div>
 

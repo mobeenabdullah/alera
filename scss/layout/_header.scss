@@ -57,8 +57,9 @@
     padding: 4rem 0;
 
     .navbar-brand {
-      padding-top: 1rem;
       margin-left: 0;
+      display: flex;
+      align-items: center;
 
       .custom-logo-link {
         margin-right: 3rem;
@@ -82,8 +83,9 @@
 
       .site-description {
         padding-top: .5rem;
-        font-size: 1.8rem;
-        line-height: inherit;
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: $primary-color;
       }
     }
 
@@ -193,31 +195,37 @@
 // SITE HERO
 .site-hero {
   position: relative;
-  padding: 15rem 0;
+  padding: 8rem 0;
   background-size: cover;
   background-position: center;
   text-align: center;
+  height: 60rem;
 
   .site-hero-content {
     position: relative;
     max-width: 84rem;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 
     h2 {
       margin-bottom: 1rem;
       font-size: 4.8rem;
       line-height: 7.2rem;
-      font-weight: bold;
+      font-weight: 500;
       color: $white;
       text-shadow: 1px 1px 1px rgba($black, .7);
     }
 
     p {
-      margin-bottom: 3rem;
-      font-size: 3rem;
+      font-size: 2.4rem;
       line-height: 4.2rem;
       color: $white;
       text-shadow: 1px 1px 1px rgba($black, .5);
+      font-weight: 300;
     }
 
   }

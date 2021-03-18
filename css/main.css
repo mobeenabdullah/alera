@@ -4884,31 +4884,31 @@ a.navbar-item,
   padding: .8rem 1.6rem;
   color: white;
   font-size: 1.6rem;
-  background-color: #F28F3B;
+  background-color: #202833;
   border: none;
   border-radius: 0; }
   .button.button-white {
-    color: #F28F3B;
+    color: #202833;
     background-color: white; }
     .button.button-white:visited {
-      color: #F28F3B; }
+      color: #202833; }
   .button.button-bordered {
-    color: #F28F3B;
+    color: #202833;
     background-color: transparent;
-    border: 1px solid #F28F3B; }
+    border: 1px solid #202833; }
     .button.button-bordered:hover {
       color: white;
-      background-color: #F28F3B; }
+      background-color: #202833; }
       .button.button-bordered:hover:visited {
         color: white; }
     .button.button-bordered:visited {
-      color: #F28F3B; }
+      color: #202833; }
   .button:visited {
     color: white; }
 
 .search-form input[type="text"], .search-form input[type="search"], .search-form input[type="email"] {
   padding: 1rem 2rem;
-  border: 0.1rem solid #F28F3B;
+  border: 0.1rem solid #202833;
   border-radius: 0;
   font-size: 1.6rem; }
 
@@ -4916,10 +4916,13 @@ a.navbar-item,
   padding: 1.5rem 3rem;
   color: white;
   font-size: 1.6rem;
-  background-color: #F28F3B;
+  background-color: #202833;
   border: none;
   border-radius: 0;
   cursor: pointer; }
+
+.form-submit input[type="submit"] {
+  font-size: 1.6rem; }
 
 .navigation.pagination .nav-links .page-numbers, .navigation.pagination .nav-links .current, .navigation.pagination .nav-links .dots {
   display: inline-block;
@@ -4934,11 +4937,11 @@ a.navbar-item,
   color: #0a0a0a; }
   .navigation.pagination .nav-links .page-numbers:hover, .navigation.pagination .nav-links .current:hover, .navigation.pagination .nav-links .dots:hover {
     color: #ffffff;
-    background-color: #F28F3B; }
+    background-color: #202833; }
 
 .navigation.pagination .nav-links .current {
   color: #ffffff;
-  background-color: #F28F3B; }
+  background-color: #202833; }
 
 .navigation.pagination .nav-links .dots:hover {
   color: #0a0a0a;
@@ -4962,17 +4965,17 @@ a.navbar-item,
     color: #0a0a0a; }
     .page-links .post-page-numbers:hover {
       color: #ffffff;
-      background-color: #F28F3B; }
+      background-color: #202833; }
   .page-links .current {
     color: #ffffff;
-    background-color: #F28F3B; }
+    background-color: #202833; }
 
 .header {
   border-bottom: 1px solid #F1F1F1; }
   .header .top-bar {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    background-color: #F28F3B; }
+    background-color: #202833; }
     .header .top-bar .top-bar-contact-info {
       padding: 0;
       list-style-type: none; }
@@ -5004,8 +5007,9 @@ a.navbar-item,
   .header .navbar {
     padding: 4rem 0; }
     .header .navbar .navbar-brand {
-      padding-top: 1rem;
-      margin-left: 0; }
+      margin-left: 0;
+      display: flex;
+      align-items: center; }
       .header .navbar .navbar-brand .custom-logo-link {
         margin-right: 3rem; }
         .header .navbar .navbar-brand .custom-logo-link img {
@@ -5017,11 +5021,12 @@ a.navbar-item,
         font-weight: 500;
         line-height: 1; }
         .header .navbar .navbar-brand .site-title a {
-          color: #F28F3B; }
+          color: #202833; }
       .header .navbar .navbar-brand .site-description {
         padding-top: .5rem;
-        font-size: 1.8rem;
-        line-height: inherit; }
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: #202833; }
     .header .navbar .navbar-menu .navbar-item {
       margin-left: 1rem;
       color: #0a0a0a;
@@ -5076,27 +5081,33 @@ a.navbar-item,
 
 .site-hero {
   position: relative;
-  padding: 15rem 0;
+  padding: 8rem 0;
   background-size: cover;
   background-position: center;
-  text-align: center; }
+  text-align: center;
+  height: 60rem; }
   .site-hero .site-hero-content {
     position: relative;
     max-width: 84rem;
-    margin: 0 auto; }
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; }
     .site-hero .site-hero-content h2 {
       margin-bottom: 1rem;
       font-size: 4.8rem;
       line-height: 7.2rem;
-      font-weight: bold;
+      font-weight: 500;
       color: white;
       text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.7); }
     .site-hero .site-hero-content p {
-      margin-bottom: 3rem;
-      font-size: 3rem;
+      font-size: 2.4rem;
       line-height: 4.2rem;
       color: white;
-      text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.5); }
+      text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.5);
+      font-weight: 300; }
   .site-hero:before {
     content: "";
     position: absolute;
@@ -5136,13 +5147,13 @@ a.navbar-item,
   word-break: break-all; }
   .widget .widget-title {
     margin-bottom: 2rem;
-    border-bottom: 0.2rem solid #F28F3B; }
+    border-bottom: 0.2rem solid #202833; }
     .widget .widget-title .widget-title-text {
       display: inline-block;
       padding: 1rem 2rem;
       color: white;
       font-weight: 500;
-      background-color: #F28F3B;
+      background-color: #202833;
       text-transform: uppercase; }
       .widget .widget-title .widget-title-text a {
         color: white; }
@@ -5185,7 +5196,7 @@ a.navbar-item,
     padding: 1.5rem 3rem;
     color: white;
     font-size: 1.6rem;
-    background-color: #F28F3B;
+    background-color: #202833;
     border: none;
     border-radius: 0;
     cursor: pointer; }
@@ -5461,6 +5472,14 @@ a.navbar-item,
   .header .navbar .navbar-menu .navbar-item {
     margin-left: 0; } }
 
+@media screen and (max-width: 50em) {
+  .header .navbar > .navbar-menu {
+    position: absolute;
+    top: 88px;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 !important; } }
+
 @media screen and (max-width: 37.5em) {
   .top-bar-contact-info li {
     margin-right: .5rem !important;
@@ -5485,3 +5504,11 @@ a.navbar-item,
       width: 100%;
       border-top: 1px solid rgba(0, 0, 0, 0.1);
       padding: 0 !important; } }
+
+@media screen and (min-width: 900px) {
+  .gallery-columns-3 .gallery-item {
+    max-width: calc(100% / 3); } }
+
+@media screen and (max-width: 1023px) {
+  .gallery-columns-3 .gallery-item {
+    max-width: calc(100% / 5); } }

@@ -20,6 +20,19 @@
   }
 }
 
+@media screen and (max-width: $bp-medium) {
+    .header {
+      .navbar {
+        & > .navbar-menu {
+          position: absolute;
+          top: 88px;
+          width: 100%;
+          border-top: 1px solid rgba(0,0,0,0.1);
+          padding: 0 !important;
+        }
+      }
+    }
+}
 @media screen and (max-width: $bp-small) {
       .top-bar-contact-info {
         li {
@@ -58,3 +71,18 @@
       }
     }
 }
+@media screen and (min-width: 900px) {
+  .gallery-columns-3 .gallery-item {
+    max-width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .gallery-columns-3 .gallery-item {
+    max-width: calc(100% / 5);
+  }
+}
+
+
+
+
