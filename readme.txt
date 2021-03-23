@@ -17,7 +17,7 @@ Alera is a responsive, fast, minimal and clean WordPress theme specifically buil
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
 * Used Bulma as a CSS framework https://bulma.io/, [MIT](https://opensource.org/licenses/MIT)
-* Bulma Navwalker https://github.com/ridgey28/WP-Bulma-Navwalker
+* Bulma Navwalker https://github.com/Poruno/Bulma-Navwalker
 * Social Icon SVGs by Box Icons https://boxicons.com/
 * Featured Image https://pxhere.com/en/photo/25359
 * Sidebar Gallery Widget Images: https://pxhere.com/en/photo/1169706, https://pxhere.com/en/photo/25359, https://pxhere.com/en/photo/1103572, https://pxhere.com/en/photo/707787, https://pxhere.com/en/photo/1198265
