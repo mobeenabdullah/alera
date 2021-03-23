@@ -20,9 +20,9 @@ get_header();
 
         <div class="container is-widescreen">
 
-            <div class="columns is-desktop">
+            <div class="columns is-variable is-8">
 
-                <div class="column is-two-thirds">
+                <div class="column is-9">
 
                     <main class="site-content">
 
@@ -50,7 +50,7 @@ get_header();
 
                 </div>
 
-                <div class="column">
+                <div class="column is-3">
                     <?php get_sidebar(); ?>
                 </div>
 

@@ -5103,8 +5103,8 @@ a.navbar-item,
       color: white;
       text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.7); }
     .site-hero .site-hero-content p {
-      font-size: 2.4rem;
-      line-height: 4.2rem;
+      font-size: 2rem;
+      line-height: 3.2rem;
       color: white;
       text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.5);
       font-weight: 300; }
@@ -5272,7 +5272,7 @@ a.navbar-item,
   .site-content .post .post-header .post-title {
     font-size: 2.4rem;
     line-height: 3.6rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #0a0a0a; }
     .site-content .post .post-header .post-title a {
       color: #0a0a0a; }
@@ -5315,7 +5315,7 @@ a.navbar-item,
     margin: 0 0 3rem 0;
     padding-bottom: 3rem;
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #0a0a0a;
     text-transform: uppercase;
     border-bottom: 1px solid #EAEAEA; }
@@ -5427,14 +5427,14 @@ a.navbar-item,
   border-bottom: 1px solid #EAEAEA; }
   .page-header .page-title {
     font-size: 4.8rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #0a0a0a; }
     .page-header .page-title a {
       color: #0a0a0a; }
 
 .not-found-header {
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #0a0a0a; }
   .not-found-header + .page-content {
     margin-top: 1rem; }
@@ -5448,7 +5448,7 @@ a.navbar-item,
 .site-content .page .post-header .post-title {
   font-size: 2.4rem;
   line-height: 3.6rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #0a0a0a; }
   .site-content .page .post-header .post-title a {
     color: #0a0a0a; }
