@@ -7,8 +7,6 @@
  */
 
 ( function( $ ) {
-	
-	"use strict";
 
 	// Site title and description.
 	wp.customize( 'blogname', function( value ) {
@@ -16,7 +14,6 @@
 			$( '.site-title a' ).text( to );
 		} );
 	} );
-
 	wp.customize( 'blogdescription', function( value ) {
 		value.bind( function( to ) {
 			$( '.site-description' ).text( to );

@@ -41,7 +41,7 @@ if ( ! function_exists( 'alera_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// Requiring Navwalker
-        require_once('inc/navwalker.php');
+        require_once( 'inc/navwalker.php' );
 
 		// This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
@@ -237,4 +237,11 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
 }
