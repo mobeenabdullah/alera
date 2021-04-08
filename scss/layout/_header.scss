@@ -117,13 +117,18 @@
 
           .navbar-dropdown {
             border-top: .2rem solid #dbdbdb;
+            div.navbar-item {
+              padding: 0;
+            }
 
             .has-dropdown {
               padding-top: 0;
               padding-bottom: 0;
 
               .navbar-link {
-                padding: .8rem 0;
+                padding: 0.5rem 1rem;
+                display: block;
+                width: 100%;
 
                 &:after {
                   display: none;

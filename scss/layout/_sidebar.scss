@@ -218,3 +218,38 @@
   }
 
 }
+
+// Sidebar
+.sidebar {
+  .select {
+    width: 100%;
+    select {
+      width: 100%;
+    }    
+  }
+
+  .widget.widget_categories  {
+    ul {
+      li {
+        text-align: left;
+        a {
+          float: none;          
+        }
+
+      }
+    }
+  }
+}
+
+// Search Form 
+.search-form {
+  label {
+    display: block;
+    width: 100%;
+    input.search-field {
+      width: 100% !important;
+      margin-bottom: 1rem !important;
+    } 
+  }      
+}
+

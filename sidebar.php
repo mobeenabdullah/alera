@@ -12,6 +12,6 @@ if ( ! is_active_sidebar( 'sidebar ' ) ) {
 }
 ?>
 
-<aside class="sidebar">
+<aside class="sidebar" role="complementary">
 	<?php dynamic_sidebar( 'sidebar' ); ?>
 </aside><!-- #secondary -->

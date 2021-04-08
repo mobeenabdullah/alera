@@ -24,5 +24,7 @@
 		<?php the_excerpt(); ?>
 	</div>
 
-    <a href="<?php echo esc_url( get_permalink() ); ?>" class="button button-bordered">Read More</a>
+    <a href="<?php echo esc_url( get_permalink() ); ?>" class="button button-bordered">
+        <?php echo esc_html__( 'Read More', 'alera' ); ?>
+    </a>
 </article>

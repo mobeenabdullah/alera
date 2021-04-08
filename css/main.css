@@ -5043,11 +5043,15 @@ a.navbar-item,
         color: #0a0a0a; }
       .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown {
         border-top: .2rem solid #dbdbdb; }
+        .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown div.navbar-item {
+          padding: 0; }
         .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown {
           padding-top: 0;
           padding-bottom: 0; }
           .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown .navbar-link {
-            padding: .8rem 0; }
+            padding: 0.5rem 1rem;
+            display: block;
+            width: 100%; }
             .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown .navbar-link:after {
               display: none; }
           .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown .dropdown {
@@ -5258,6 +5262,23 @@ a.navbar-item,
   .widget .gallery .gallery-item a img {
     padding: .5rem 1rem; }
 
+.sidebar .select {
+  width: 100%; }
+  .sidebar .select select {
+    width: 100%; }
+
+.sidebar .widget.widget_categories ul li {
+  text-align: left; }
+  .sidebar .widget.widget_categories ul li a {
+    float: none; }
+
+.search-form label {
+  display: block;
+  width: 100%; }
+  .search-form label input.search-field {
+    width: 100% !important;
+    margin-bottom: 1rem !important; }
+
 .content-area {
   margin: 5rem 0 10rem 0;
   word-break: break-all; }
@@ -5458,9 +5479,24 @@ a.navbar-item,
   margin-bottom: 5rem; }
   .site-content .page .post-content p {
     color: #0a0a0a; }
+  .site-content .page .post-content a {
+    text-decoration: underline !important; }
 
 .site-content .page .page-content {
   margin-top: 0; }
+  .site-content .page .page-content p {
+    color: #0a0a0a; }
+  .site-content .page .page-content h2 {
+    color: #0a0a0a; }
+  .site-content .page .page-content a {
+    text-decoration: underline !important;
+    color: #0a0a0a; }
+  .site-content .page .page-content ol {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .site-content .page .page-content ol li {
+      color: #0a0a0a; }
 
 @media screen and (max-width: 75em) {
   .container {

@@ -25,7 +25,7 @@
     <a class="skip-link screen-reader-text" href="#main-content"><?php esc_html_e( 'Skip to content', 'alera' ); ?></a>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" role="banner">
 
         <div class="top-bar">
             <div class="container is-widescreen">
@@ -107,12 +107,12 @@
                     ?>
                     <p class="site-description"><?php echo esc_html($alera_description); ?></p>
                     <?php endif; ?>
-
-                    <span role="button" class="navbar-burger burger" aria-label="<?php echo esc_attr__( 'menu', 'alera' ); ?>" aria-expanded="false" data-target="mainNavbar">
+                    
+                    <button type="button" class="navbar-burger burger" aria-label="<?php echo esc_attr__( 'menu', 'alera' ); ?>" aria-expanded="false" data-target="mainNavbar">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
-                    </span>
+                    </button>
 
                 </div>
 
@@ -126,7 +126,8 @@
                                 'container'         => false,
                                 'menu_class'        => 'navbar-menu',
                                 'menu_id'           => 'primary-menu',
-                                'after'             => "</div>",
+                                'before'            => '<div>',
+                                'after'             => "</div>",                                
                                 'walker'            => new Navwalker())
                             );
                         ?>

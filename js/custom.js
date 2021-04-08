@@ -1,4 +1,5 @@
 (function () {
+    "use strict";
 
     // TOGGLE NAVBAR
     var burger = document.querySelector('.burger');

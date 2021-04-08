@@ -11,7 +11,7 @@
 
 ?>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="columns is-variable is-8">
                 <div class="column is-3">
