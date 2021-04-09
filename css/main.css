@@ -5064,7 +5064,8 @@ a.navbar-item,
             top: 0;
             left: 100%;
             max-width: 100%;
-            padding-top: 0; }
+            padding-top: 0;
+            margin: 0; }
             .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown .navbar-dropdown .menu-item {
               max-width: 100%; }
           .header .navbar .navbar-menu .navbar-item.has-dropdown .navbar-dropdown .has-dropdown:hover > .navbar-dropdown {
