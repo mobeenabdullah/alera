@@ -96,11 +96,11 @@
                 <div class="navbar-brand">
 
                     <?php the_custom_logo(); ?>
-                    <h1 class="site-title">
+                    <div class="site-title">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                             <?php esc_html( bloginfo( 'name' ) ); ?>
                         </a>
-                    </h1>
+                    </div>
                     <?php
                         $alera_description = get_bloginfo( 'description', 'display' );
                         if ( $alera_description || is_customize_preview() ) :
@@ -146,7 +146,7 @@
             <div class="site-hero-content">
                 <?php $get_featured_area_heading = get_theme_mod('featured_area_heading'); ?>
                 <?php if (!empty($get_featured_area_heading)) : ?>
-                    <h2><?php echo esc_html($get_featured_area_heading); ?></h2>
+                    <h1><?php echo esc_html($get_featured_area_heading); ?></h1>
                 <?php endif; ?>
 
                 <?php $get_featured_area_description = get_theme_mod('featured_area_description'); ?>
