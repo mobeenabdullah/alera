@@ -1,0 +1,59 @@
+.comments-area{
+  .comment-content {
+    p {
+      a {
+        text-decoration: underline !important;
+        color: $black;
+      }
+    }
+
+    ul {
+      li {
+        a {
+          text-decoration: underline !important;
+          color: $black;
+        }
+      }
+    }
+
+    ol {
+      li {
+        a {
+          text-decoration: underline !important;
+          color: $black;
+        }
+      }
+    }
+
+    table {
+      tbody {
+        tr {
+          td {
+            a{
+              text-decoration: underline !important;
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.comment {
+  .comment-content {
+    a {
+      text-decoration: underline !important;
+      color: $black;
+    }
+    ul {
+      li {
+        a {
+          text-decoration: underline !important;
+          color: $black;
+        }
+      }
+    }
+  }
+}

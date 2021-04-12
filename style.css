@@ -1,12 +1,10 @@
 /*!
 Theme Name: Alera
-Theme URI: https://github.com/mobeenabdullah/alera
 Author: Mobeen Abdullah
-Author URI: https://www.mobeenabdullah.com
 Description: Fast, Lightweight and Responsive WordPress Theme
 Version: 1.1.10
 License: GNU General Public License v2 or later
-License URI: LICENSE
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: alera
 Tags: custom-background, custom-logo, custom-menu, featured-images, translation-ready
 Requires at least: 4.5
@@ -753,9 +751,8 @@ a:hover, a:active {
 	clip-path: none;
 	color: #21759b;
 	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
+	font-size: 15px;
+	font-weight: 700;
 	height: auto;
 	left: 5px;
 	line-height: normal;
@@ -764,6 +761,7 @@ a:hover, a:active {
 	top: 5px;
 	width: auto;
 	z-index: 100000;
+	border: 2px solid #202833;
 	/* Above WP toolbar. */
 }
 

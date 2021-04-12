@@ -142,7 +142,7 @@
 
     <?php if ( is_home() ) : ?>
         <!-- HERO -->
-        <section class="site-hero" <?php $get_featured_area_background_image = get_theme_mod('featured_area_background_image'); if (!empty($get_featured_area_background_image)) { ?> style="background-image: url('<?php echo esc_attr($get_featured_area_background_image); ?>');" <?php } ?>>
+        <section class="site-hero" <?php $get_featured_area_background_image = get_theme_mod('featured_area_background_image'); if (!empty($get_featured_area_background_image)) { ?> style="background-image: url('<?php echo esc_url($get_featured_area_background_image); ?>');" <?php } ?>>
             <div class="site-hero-content">
                 <?php $get_featured_area_heading = get_theme_mod('featured_area_heading'); ?>
                 <?php if (!empty($get_featured_area_heading)) : ?>

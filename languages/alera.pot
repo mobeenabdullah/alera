@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Alera\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-03 15:34+0000\n"
+"POT-Creation-Date: 2021-08-03 15:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -25,7 +25,7 @@ msgstr[1] ""
 
 #: inc/customizer.php:138
 msgid ""
-"(c) 2020 - All rights reserved. Theme by <a href=\"https://www."
+"(c) 2021 - All rights reserved. Theme by <a href=\"https://www."
 "mobeenabdullah.com\">Mobeen Abdullah</a>"
 msgstr ""
 

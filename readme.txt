@@ -19,12 +19,67 @@ Alera is a responsive, fast, minimal and clean WordPress theme specifically buil
 * Used Bulma as a CSS framework https://bulma.io/, [MIT](https://opensource.org/licenses/MIT)
 * Bulma Navwalker https://github.com/Poruno/Bulma-Navwalker
 * Social Icon SVGs by Box Icons https://boxicons.com/
-* Featured Image https://pxhere.com/en/photo/25359
-* Sidebar Gallery Widget Images: https://pxhere.com/en/photo/1169706, https://pxhere.com/en/photo/25359, https://pxhere.com/en/photo/1103572, https://pxhere.com/en/photo/707787, https://pxhere.com/en/photo/1198265
+
+Main image in theme screenshot
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/25359
+
+First image in Gallery widget in theme screenshot
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/25359
+
+Second image in Gallery widget in theme screenshot
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1169706
+
+Third image in Gallery widget in theme screenshot
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1198265
+
+Fourth image in Gallery widget in theme screenshot
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1103572
+
+Fifth image in Gallery widget in theme screenshot
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/707787
+
+
+First image in footer Gallery widget
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1198265
+
+Second image in footer Gallery widget
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/707787
+
+Third image in footer Gallery widget
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1103572
+
+Fourth image in footer Gallery widget
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/1169706
+
+Fifth image in footer Gallery widget
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://pxhere.com/en/license
+Source: https://pxhere.com/en/photo/25359
+
 
 == License ==
 
-Alera WordPress Theme, Copyright 2020 WordPress.org
+Alera WordPress Theme, Copyright 2021 WordPress.org
 Alera is distributed under the terms of the GNU GPL.
 
 Alera is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.

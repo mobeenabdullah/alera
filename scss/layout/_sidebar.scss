@@ -253,3 +253,16 @@
   }      
 }
 
+.textwidget {
+    a {
+      text-decoration: underline !important;
+      color: $black !impoprtant;
+    }
+    p {
+      a {
+        color: $black !important;
+        text-decoration: underline !important;
+        color: $black;
+      }
+    }
+}

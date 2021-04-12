@@ -142,7 +142,7 @@ function alera_customize_register( $wp_customize ) {
         'priority'   => 30,
     ) );
     $wp_customize->add_setting( 'copyright_text' , array(
-        'default'     => __('(c) 2020 - All rights reserved. Theme by Mobeen Abdullah', 'alera'),
+        'default'     => __('(c) 2021 - All rights reserved. Theme by Mobeen Abdullah', 'alera'),
         'transport'   => 'refresh',
         'sanitize_callback'    => 'alera_sanitize_html'
     ) );
