@@ -14,68 +14,50 @@ Alera is a responsive, fast, minimal and clean WordPress theme specifically buil
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
-* Used Bulma as a CSS framework https://bulma.io/, [MIT](https://opensource.org/licenses/MIT)
-* Bulma Navwalker https://github.com/Poruno/Bulma-Navwalker
-* Social Icon SVGs by Box Icons https://boxicons.com/
+Based on Underscores
+https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
-Main image in theme screenshot
+normalize.css
+https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+
+Used Bulma as a CSS framework
+https://bulma.io/,[MIT](https://opensource.org/licenses/MIT)
+
+Bulma Navwalker
+https://github.com/Poruno/Bulma-Navwalker
+
+Social Icon SVGs by Box Icons
+https://boxicons.com/
+
+Main image in the theme screenshot
 License: CC0 1.0 Universal (CC0 1.0)
 License URL: https://pxhere.com/en/license
 Source: https://pxhere.com/en/photo/25359
 
-First image in Gallery widget in theme screenshot
+First image of Gallery widget in the theme screenshot
 License: CC0 1.0 Universal (CC0 1.0)
 License URL: https://pxhere.com/en/license
 Source: https://pxhere.com/en/photo/25359
 
-Second image in Gallery widget in theme screenshot
+Second image of Gallery widget in the theme screenshot
 License: CC0 1.0 Universal (CC0 1.0)
 License URL: https://pxhere.com/en/license
 Source: https://pxhere.com/en/photo/1169706
 
-Third image in Gallery widget in theme screenshot
+Third image of Gallery widget in the theme screenshot
 License: CC0 1.0 Universal (CC0 1.0)
 License URL: https://pxhere.com/en/license
 Source: https://pxhere.com/en/photo/1198265
 
-Fourth image in Gallery widget in theme screenshot
+Fourth image of Gallery widget in the theme screenshot
 License: CC0 1.0 Universal (CC0 1.0)
 License URL: https://pxhere.com/en/license
 Source: https://pxhere.com/en/photo/1103572
 
-Fifth image in Gallery widget in theme screenshot
+Fifth image of Gallery widget in the theme screenshot
 License: CC0 1.0 Universal (CC0 1.0)
 License URL: https://pxhere.com/en/license
 Source: https://pxhere.com/en/photo/707787
-
-
-First image in footer Gallery widget
-License: CC0 1.0 Universal (CC0 1.0)
-License URL: https://pxhere.com/en/license
-Source: https://pxhere.com/en/photo/1198265
-
-Second image in footer Gallery widget
-License: CC0 1.0 Universal (CC0 1.0)
-License URL: https://pxhere.com/en/license
-Source: https://pxhere.com/en/photo/707787
-
-Third image in footer Gallery widget
-License: CC0 1.0 Universal (CC0 1.0)
-License URL: https://pxhere.com/en/license
-Source: https://pxhere.com/en/photo/1103572
-
-Fourth image in footer Gallery widget
-License: CC0 1.0 Universal (CC0 1.0)
-License URL: https://pxhere.com/en/license
-Source: https://pxhere.com/en/photo/1169706
-
-Fifth image in footer Gallery widget
-License: CC0 1.0 Universal (CC0 1.0)
-License URL: https://pxhere.com/en/license
-Source: https://pxhere.com/en/photo/25359
-
 
 == License ==
 
