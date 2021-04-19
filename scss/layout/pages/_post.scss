@@ -71,14 +71,8 @@
       p {
         color: $black;
       }
-      h1 {
-        a {
-          color: $black;
-          text-decoration: underline;
-        }
-      }
-      h2, h3, h4, h5, h6 {
-        @extend h1;
+      a {
+        text-decoration: underline !important;
       }
     }
 
