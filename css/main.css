@@ -140,6 +140,16 @@ pre,
 iframe,
 hr,
 h1,
+.site-content .post .post-content h2,
+.site-content .post .post-content h3,
+.site-content .post .post-content h4,
+.site-content .post .post-content h5,
+.site-content .post .post-content h6,
+.site-content .page .page-content h2,
+.site-content .page .page-content h3,
+.site-content .page .page-content h4,
+.site-content .page .page-content h5,
+.site-content .page .page-content h6,
 h2,
 h3,
 h4,
@@ -148,7 +158,18 @@ h6 {
   margin: 0;
   padding: 0; }
 
+
 h1,
+.site-content .post .post-content h2,
+.site-content .post .post-content h3,
+.site-content .post .post-content h4,
+.site-content .post .post-content h5,
+.site-content .post .post-content h6,
+.site-content .page .page-content h2,
+.site-content .page .page-content h3,
+.site-content .page .page-content h4,
+.site-content .page .page-content h5,
+.site-content .page .page-content h6,
 h2,
 h3,
 h4,
@@ -5125,7 +5146,7 @@ a.navbar-item,
     flex-wrap: wrap;
     align-content: center;
     justify-content: center; }
-    .site-hero .site-hero-content h1 {
+    .site-hero .site-hero-content h1, .site-hero .site-hero-content .site-content .post .post-content h2, .site-content .post .post-content .site-hero .site-hero-content h2, .site-hero .site-hero-content .site-content .post .post-content h3, .site-content .post .post-content .site-hero .site-hero-content h3, .site-hero .site-hero-content .site-content .post .post-content h4, .site-content .post .post-content .site-hero .site-hero-content h4, .site-hero .site-hero-content .site-content .post .post-content h5, .site-content .post .post-content .site-hero .site-hero-content h5, .site-hero .site-hero-content .site-content .post .post-content h6, .site-content .post .post-content .site-hero .site-hero-content h6, .site-hero .site-hero-content .site-content .page .page-content h2, .site-content .page .page-content .site-hero .site-hero-content h2, .site-hero .site-hero-content .site-content .page .page-content h3, .site-content .page .page-content .site-hero .site-hero-content h3, .site-hero .site-hero-content .site-content .page .page-content h4, .site-content .page .page-content .site-hero .site-hero-content h4, .site-hero .site-hero-content .site-content .page .page-content h5, .site-content .page .page-content .site-hero .site-hero-content h5, .site-hero .site-hero-content .site-content .page .page-content h6, .site-content .page .page-content .site-hero .site-hero-content h6 {
       margin-bottom: 1rem;
       font-size: 4.8rem;
       line-height: 7.2rem;
@@ -5362,6 +5383,9 @@ a.navbar-item,
     margin-bottom: 5rem; }
     .site-content .post .post-content p {
       color: #0a0a0a; }
+    .site-content .post .post-content h1 a, .site-content .post .post-content h2 a, .site-content .post .post-content h3 a, .site-content .post .post-content h4 a, .site-content .post .post-content h5 a, .site-content .post .post-content h6 a {
+      color: #0a0a0a;
+      text-decoration: underline; }
 
 .site-content .comments-area {
   margin-top: 10rem; }
@@ -5535,6 +5559,9 @@ a.navbar-item,
       .site-content .page .page-content ol li a {
         text-decoration: underline !important;
         color: #0a0a0a; }
+  .site-content .page .page-content h1 a, .site-content .page .page-content h2 a, .site-content .page .page-content h3 a, .site-content .page .page-content h4 a, .site-content .page .page-content h5 a, .site-content .page .page-content h6 a {
+    color: #0a0a0a;
+    text-decoration: underline; }
 
 .site-content .post-content {
   margin-top: 2rem;
