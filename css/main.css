@@ -5316,7 +5316,7 @@ a.navbar-item,
 
 .content-area {
   margin: 5rem 0 10rem 0;
-  word-break: break-all; }
+  word-break: break-word; }
 
 .site-content .post {
   margin: 0 0 4rem 0;
