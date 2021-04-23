@@ -9,6 +9,42 @@ body {
   font-size: 1.6rem !important;
   color: #0a0a0a !important; }
 
+.site-content .page-content h1, .site-content .post-content h1 {
+  font-size: 4.8rem; }
+
+.site-content .page-content h2, .site-content .post-content h2 {
+  font-size: 3.6rem; }
+
+.site-content .page-content h3, .site-content .post-content h3 {
+  font-size: 3rem; }
+
+.site-content .page-content h4, .site-content .post-content h4 {
+  font-size: 2.4rem; }
+
+.site-content .page-content h5, .site-content .post-content h5 {
+  font-size: 2rem; }
+
+.site-content .page-content h6, .site-content .post-content h6 {
+  font-size: 1.8rem; }
+
+h1 {
+  font-size: 4.8rem; }
+
+h2 {
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.4rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 1.8rem; }
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -5494,9 +5530,9 @@ a.navbar-item,
   font-size: 2.4rem;
   font-weight: 500;
   color: #0a0a0a; }
-  .not-found-header + .page-content {
+  .not-found-header + .page-content, .site-content .not-found-header + .post-content {
     margin-top: 1rem; }
-    .not-found-header + .page-content p {
+    .not-found-header + .page-content p, .site-content .not-found-header + .post-content p {
       margin-bottom: 3rem; }
 
 .site-content .page .post-thumbnail {
@@ -5515,38 +5551,41 @@ a.navbar-item,
   margin-top: 2rem;
   margin-bottom: 5rem; }
   .site-content .page .post-content p {
-    color: #0a0a0a; }
+    color: #0a0a0a;
+    margin-bottom: 3rem !important; }
     .site-content .page .post-content p a {
       text-decoration: underline !important; }
   .site-content .page .post-content a {
     text-decoration: underline !important; }
 
-.site-content .page .page-content {
+.site-content .page .page-content, .site-content .page .post-content {
   margin-top: 0; }
-  .site-content .page .page-content p {
-    color: #0a0a0a; }
-    .site-content .page .page-content p a {
+  .site-content .page .page-content p, .site-content .page .post-content p {
+    color: #0a0a0a;
+    margin-bottom: 3rem; }
+    .site-content .page .page-content p a, .site-content .page .post-content p a {
       text-decoration: underline !important;
       color: #0a0a0a; }
-  .site-content .page .page-content h2 {
+  .site-content .page .page-content h2, .site-content .page .post-content h2 {
     color: #0a0a0a; }
-  .site-content .page .page-content ol {
+  .site-content .page .page-content ol, .site-content .page .post-content ol {
     margin-left: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem; }
-    .site-content .page .page-content ol li {
+    .site-content .page .page-content ol li, .site-content .page .post-content ol li {
       color: #0a0a0a; }
-      .site-content .page .page-content ol li a {
+      .site-content .page .page-content ol li a, .site-content .page .post-content ol li a {
         text-decoration: underline !important;
         color: #0a0a0a; }
-  .site-content .page .page-content a {
+  .site-content .page .page-content a, .site-content .page .post-content a {
     text-decoration: underline !important; }
 
 .site-content .post-content {
   margin-top: 2rem;
   margin-bottom: 5rem; }
   .site-content .post-content p {
-    color: #0a0a0a; }
+    color: #0a0a0a;
+    margin-bottom: 3rem; }
     .site-content .post-content p a {
       text-decoration: underline !important;
       color: #0a0a0a; }
@@ -5561,15 +5600,15 @@ a.navbar-item,
       text-decoration: underline !important;
       color: #0a0a0a; }
 
-.site-content .page-content p a {
+.site-content .page-content p a, .site-content .post-content p a {
   text-decoration: underline !important; }
 
-.site-content .page-content ol li a {
+.site-content .page-content ol li a, .site-content .post-content ol li a {
   text-decoration: underline !important; }
 
-.site-content .page-content ul li {
+.site-content .page-content ul li, .site-content .post-content ul li {
   color: #0a0a0a; }
-  .site-content .page-content ul li a {
+  .site-content .page-content ul li a, .site-content .post-content ul li a {
     text-decoration: underline !important;
     color: #0a0a0a; }
 
