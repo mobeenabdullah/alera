@@ -189,6 +189,13 @@ function alera_sanitize_number_absint( $number, $setting ) {
 }
 
 /**
+ * Type checkbox sanitization callback.
+ */
+function alera_sanitize_checkbox( $checked ) {
+	return ( (isset($checked) && $checked == true) ? true : false );
+}
+
+/**
  * Type image upload sanitization callback.
  */
 function alera_sanitize_image( $image, $setting ) {

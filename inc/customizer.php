@@ -102,11 +102,22 @@ function alera_customize_register( $wp_customize ) {
         'title'      => __('Featured Area', 'alera'),
         'priority'   => 30,
     ) );
-    $wp_customize->add_setting( 'featured_area_heading' , array(
+    $wp_customize->add_setting( 'enable_featured_area' , array(
         'default'     => '',
         'transport'   => 'refresh',
-        'sanitize_callback'    => 'alera_sanitize_html'
+        'sanitize_callback'    => 'alera_sanitize_checkbox'
     ) );
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'enable_featured_area', array(
+		'label'        => __('Enable Featured Area', 'alera'),
+		'type'      =>  'checkbox',
+		'section'    => 'featured_area',
+		'settings'   => 'enable_featured_area',
+	) ) );
+	$wp_customize->add_setting( 'featured_area_heading' , array(
+		'default'     => '',
+		'transport'   => 'refresh',
+		'sanitize_callback'    => 'alera_sanitize_html'
+	) );
     $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'featured_area_heading', array(
         'label'        => __('Heading', 'alera'),
         'type'      =>  'text',

@@ -139,8 +139,8 @@
         </div>
     </header>
     <!-- ./HEADER -->
-
-    <?php if ( is_home() ) : ?>
+    <?php $enable_featured_area = get_theme_mod('enable_featured_area'); ?>
+    <?php if ( is_home() && isset($enable_featured_area) && $enable_featured_area == true ) : ?>
         <!-- HERO -->
         <section class="site-hero" <?php $get_featured_area_background_image = get_theme_mod('featured_area_background_image'); if (!empty($get_featured_area_background_image)) { ?> style="background-image: url('<?php echo esc_url($get_featured_area_background_image); ?>');" <?php } ?>>
             <div class="site-hero-content">
